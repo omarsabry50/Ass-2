@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Registration</title>
+  </head>
+  <body>
+    <h1>Student Registration Form</h1>
+
+    <!-- ===== Form Section ===== -->
+    <form>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" /><br /><br />
+
+      <label for="email">Email:</label>
+      <input id="email" type="email" name="email" /><br /><br />
+
+      <label for="pass">Password:</label>
+      <input id="pass" type="password" name="password" /><br /><br />
+
+      <label for="age">Age:</label>
+      <input id="age" type="number" name="age" /><br /><br />
+
+      <label for="phone">Phone Number:</label>
+      <input id="phone" type="tel" name="phone" /><br /><br />
+
+      <label for="color">Favorite Color:</label>
+      <input id="color" type="color" name="color" /><br /><br />
+
+      <label for="cv">Upload CV:</label>
+      <input id="cv" type="file" name="cv" /><br /><br />
+
+      <label>Gender:</label><br />
+      <input type="radio" id="gender-male" name="gender" value="male" />
+      <label for="gender-male">Male</label><br />
+
+      <input type="radio" id="gender-female" name="gender" value="female" />
+      <label for="gender-female">Female</label><br /><br />
+
+      <label>Skills:</label><br />
+      <input type="checkbox" id="skill-html" name="skills" value="HTML" />
+      <label for="skill-html">HTML</label><br />
+
+      <input type="checkbox" id="skill-css" name="skills" value="CSS" />
+      <label for="skill-css">CSS</label><br />
+
+      <input type="checkbox" id="skill-js" name="skills" value="JavaScript" />
+      <label for="skill-js">JavaScript</label><br /><br />
+
+      <label for="department">Department:</label>
+      <select name="department" id="department">
+        <option value="cs">Computer Science</option>
+        <option value="it">Information Technology</option>
+        <option value="ai">Artificial Intelligence</option></select
+      ><br /><br />
+
+      <label for="favLang">Favorite Programming Language:</label>
+  <input type="text" id="favLang" name="favLang" list="languages" /><br /><br />
+
+  <datalist id="languages">
+    <option value="Python" />
+    <option value="C++" />
+    <option value="Java" />
+    <option value="TypeScript" />
+  </datalist>
+
+      <label for="notes">Additional Notes:</label><br />
+      <textarea id="notes" rows="4" cols="30" name="notes"></textarea
+      ><br /><br />
+
+      <button type="submit">Submit</button>
+      <button type="reset">Clear</button>
+    </form>
+
+    <!-- ===== Table Section ===== -->
+    <h2>Student Records</h2>
+    <table border="1" cellpadding="10">
+      <thead>
+        <tr>
+          <th rowspan="2">Department</th>
+          <th rowspan="2">Full Name</th>
+          <th colspan="3">Contact Info</th>
+          <th rowspan="2">Skills</th>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Computer Science Students -->
+        <tr>
+          <td rowspan="2">Computer Science</td>
+          <td>Ahmed Ali</td>
+          <td>ahmed@example.com</td>
+          <td>01001234567</td>
+          <td>21</td>
+          <td>HTML, CSS</td>
+        </tr>
+        <tr>
+          <td>Reem Saeed</td>
+          <td>reem@example.com</td>
+          <td>01122334455</td>
+          <td>20</td>
+          <td>JavaScript, CSS</td>
+        </tr>
+
+        <!-- Information Technology Students -->
+        <tr>
+          <td rowspan="2">Information Technology</td>
+          <td>Mohamed Tarek</td>
+          <td>tarek@example.com</td>
+          <td>01233445566</td>
+          <td>22</td>
+          <td>HTML, JS</td>
+        </tr>
+        <tr>
+          <td>Salma Nabil</td>
+          <td>salma@example.com</td>
+          <td>01099887766</td>
+          <td>23</td>
+          <td>HTML, CSS, JS</td>
+        </tr>
+
+        <!-- Artificial Intelligence Student (Single Student) -->
+        <tr>
+          <td>Artificial Intelligence</td>
+          <td colspan="5" style="text-align: center">No data available yet</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
